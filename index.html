@@ -11,11 +11,12 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Caudex" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
-  <title>Bootstrap Theme</title>
+  <title>Taras Turchinskiy</title>
 </head>
 
 <body>
@@ -24,53 +25,66 @@
     <header id="main-header">
       <div class="row no-gutters">
         <div class="col-lg-4 col-md-5">
-          <img src="img/halo1.png" alt="">
+          <img src="img/profile_pic - Copy.jpg" alt="">
         </div>
 
         <div class="col-lg-8 col-md-7">
           <div class="d-flex flex-column">
             <div class="p-5 bg-dark text-white">
               <div class="d-flex flex-row justify-content-between align-items-center">
-                <h1 class="display-4">Taras Turchinskiy</h1>
+                <h1 class="display-4"><strong>Taras Turchinskiy</strong></h1>
                 <div class="d-none d-md-block">
-                  <a class="text-white" href="https://twitter.com/?lang=en-sg">
+                  <a class="text-white" href="https://twitter.com/?lang=en-sg" target="_blank">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </div>
                 <div  class="d-none d-md-block">
-                  <a class="text-white" href="https://www.linkedin.com/in/tt040290/">
+                  <a class="text-white" href="https://www.linkedin.com/in/tt040290/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                   </a>
                 </div>
                 <div class="d-none d-md-block">
-                  <a  class="text-white" href="https://github.com/Rstinkho">
+                  <a  class="text-white" href="https://github.com/Rstinkho" target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </div>
               </div>
             </div>
-
-            <div style="font-family: 'Teko'" class="p-4 bg-black text-white">
-              FULL-STACK WEB DEVELOPER
+            
+            <div style="font-family: 'Teko'" class="p-2 bg-black text-white">
+              <hr>
+              <p>FULL-STACK WEB DEVELOPER</p>
+              <hr class="bg-white">
+              <p>with entrepreneur and marketing background</p>
+              <hr class="bg-white">
+              <p>"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program." - Linus Torvalds </p>
+                <div style="font-family: 'Teko'" class="p-2 bg-black text-white">
+                <div id="movingBallG">
+                    <div class="movingBallLineG"></div>
+                    <div id="movingBallG_1" class="movingBallG"></div>
+                  </div>
+              </div>
             </div>
+
+
 
             <div>
               <div class="d-flex flex-row text-white align-items-stretch text-center">
                 <div class="port-item p-4 bg-info" data-toggle="collapse" data-target="#home">
                   <i class="fas fa-id-card fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Skills</span>
+                    <span class="d-none d-sm-block">Skills</span>                 
                 </div>
                 <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
                   <i class="fas fa-folder-open fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Works</span>
+                    <span class="d-none d-sm-block">Works</span>                 
                 </div>
                 <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
                     <i class="fas fa-graduation-cap fa-2x d-block"></i>
-                      <span class="d-none d-sm-block">Brief Profile</span>
+                      <span class="d-none d-sm-block">Brief Profile</span>                 
                 </div>
                 <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
                   <i class="fas fa-envelope-open fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Contact Me</span>
+                    <span class="d-none d-sm-block">Contact Me</span>                 
                 </div>
               </div>
             </div>
@@ -139,7 +153,7 @@
         </div>
 
       </div>
-
+    
     </div>
 
     <!--Resume-->
@@ -173,7 +187,7 @@
                     <h6 class="text-muted">Dates: 2016 - 2017</h6>
                   </div>
                 </div>
-
+            
                <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">General Assembly</h4>
@@ -211,7 +225,7 @@
               <h6 class="text-muted">Dates: Jan 2011 - Feb 2014</h6>
             </div>
           </div>
-
+        
         <div class="card">
             <div class="card-body">
               <h4 class="card-title">LLC Bereg-M</h4>
@@ -230,36 +244,109 @@
 
 
   <!--WORK-->
-<div id="work" class="collapse">
-  <div class="card card-body bg-warning text-white py-5">
-    <h2>My WebApps</h2>
-  </div>
-  <div class="card card-body py-5" style="background-color: #fff6c1">
-    <p>List of my projects</p>
-    <div class="row no-gutters">
-      <div class="col-md-3">
-        <a href="img/proj1.JPG" data-toggle="lightbox">
-        <img src="img/proj1.JPG" alt="" class="img-fluid">
-      </a>
+  <div id="work" class="collapse">
+      <div class="card card-body bg-warning text-white py-5">
+        <h2>My WebApps</h2>
       </div>
-      <div class="col-md-3">
-          <a href="img/proj2.png" data-toggle="lightbox">
-            <img src="img/proj2.png" alt="" class="img-fluid">
-          </a>
-      </div>
-      <div class="col-md-3">
-          <a href="img/proj3.png" data-toggle="lightbox">
-            <img src="img/proj3.png" alt="" class="img-fluid">
-          </a>
-      </div>
-      <div class="col-md-3">
-          <a href="img/proj4.png" data-toggle="lightbox">
-            <img src="img/proj4.png" alt="" class="img-fluid">
-          </a>
+      <div class="card card-body py-5" style="background-color: #fff6c1">
+        <p>List of my projects:</p>
+    <div class="row">
+      <div class="col-sm-6">
+      <div class="card m-5">
+        <img class="card-img-top" src="img/proj1.JPG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Vegetarian snake</h5>
+          <p class="card-text">Classic snake game with several enhancements</p>
+          <p class="card-text">
+            <small class="text-muted">
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#aboutOne">About</button>
+              <a href="https://github.com/Rstinkho/project-1" target="_blank"><button type="button" class="btn btn-outline-warning">Github</button></a>
+              <a href="https://rstinkho.github.io/project-1/" target="_blank"><button type="button" class="btn btn-outline-dark">Source</button></a>         
+            </small>
+          </p>
+        </div>
       </div>
     </div>
+    <div class="col-sm-6">
+      <div class="card m-5">
+        <img class="card-img-top" src="img/proj2.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Tennis Buddy</h5>
+          <p class="card-text">Social App which helps you to find a partner to play tennis</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card m-5">
+        <img class="card-img-top" src="img/proj3.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Foodtruckr</h5>
+          <p class="card-text">App for restaraunts to distribute their food in trucks, and for users to track the location of food</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card m-5">
+          <img class="card-img-top" src="img/proj4.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Business Plan Creator</h5>
+            <p class="card-text">App helps you to create an academic business plan. In development.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+    </div>
+    </div>
+    </div>
   </div>
-</div>
+
+
+
+<!--About(projects)-->
+  <div class="modal fade" id="aboutOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Vegeterian snake</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <img src="img/proj1.JPG" style="width: 100%;">
+              <p>Tools used: javascript (canvas, prototyping), jQuery, animate.css, html/css </p>
+              <p>Description: vegetarian snake is a classic approach in creating a snake-type game, with basic mechanics on collision with different objects </p>
+              <p>Features:</p>
+              <ul>
+                <li>Since our snake is vegetarian, eating veggetables and fruits gives you a points (2 for brokkolini, 1 for apple), eating steak makes your snake dead</li>
+                <li>Three different difficulty level, according to game speed</li>
+                <li>Dynamic difficulty level, game speed is increasing when you eat more</li>
+                <li>Two snake commentators will try to convince you to eat either veggies or meat</li>
+                <li>Colorful pixel picture</li>
+                <li>Indicator shows how full is snake stomach</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--Contact form-->
 <div id="contact" class="collapse">
@@ -318,14 +405,14 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-
+    
 
   <script>
     // Get the current year for the copyright
@@ -334,7 +421,7 @@
     $('.port-item').click(function () {
       $('.collapse').collapse('hide');
     });
-
+    
     $('document').on('click', '[data-toggle="lightbox"]', function(e) {
       e.preventDefault();
       $(this).ekkoLightbox();
