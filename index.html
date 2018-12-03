@@ -269,21 +269,33 @@
     </div>
     <div class="col-sm-6">
       <div class="card m-5">
-        <img class="card-img-top" src="img/proj2.png" alt="Card image cap">
+        <img class="card-img-top" src="img/proj2img1.JPG" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Tennis Buddy</h5>
-          <p class="card-text">Social App which helps you to find a partner to play tennis</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text">Social App, helps you to find a partner to play tennis</p>
+          <p class="card-text">
+            <small class="text-muted">
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#aboutTwo">About</button>
+                <a href="https://github.com/Rstinkho/Project-2-Tennis-Body-App" target="_blank"><button type="button" class="btn btn-outline-warning">Github</button></a>
+                <a href="http://app-tennis-buddy.herokuapp.com/login" target="_blank"><button type="button" class="btn btn-outline-dark">Source</button></a>  
+          </small>
+        </p>
         </div>
       </div>
     </div>
     <div class="col-sm-6">
       <div class="card m-5">
-        <img class="card-img-top" src="img/proj3.png" alt="Card image cap">
+        <img class="card-img-top" src="img/proj3img1.JPG" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Foodtruckr</h5>
           <p class="card-text">App for restaraunts to distribute their food in trucks, and for users to track the location of food</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text">
+            <small class="text-muted">
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#aboutThree">About</button>
+              <a href="https://github.com/chanleyou/project-3" target="_blank"><button type="button" class="btn btn-outline-warning">Github</button></a>
+              <a href="http://food-truckr.herokuapp.com" target="_blank"><button type="button" class="btn btn-outline-dark">Source</button></a>  
+            </small>
+          </p>
         </div>
       </div>
     </div>
@@ -293,7 +305,7 @@
           <div class="card-body">
             <h5 class="card-title">Business Plan Creator</h5>
             <p class="card-text">App helps you to create an academic business plan. In development.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted">Deployment in proccess...</small></p>
           </div>
         </div>
     </div>
@@ -330,6 +342,61 @@
         </div>
       </div>
      </div>
+
+     <div class="modal fade" id="aboutTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Tennis Buddy</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/proj2desc.JPG" style="width: 100%;">
+                <p>Tools used: node.js, express, react views, postgreSQL, javascript, html/css, bootstrap, heroku, MVC, routing </p>
+                <p>Description: Tennis Buddy is an application which helps you to find partners for playing tennis. </p>
+                <p>Features:</p>
+                <ul> 
+                  <li>Registration and creating profile</li>
+                  <li>Overview of your skill with recommendation on improvements</li>
+                  <li>Send message to other users</li>
+                  <li>Search among different levels of users</li>
+                  <li>Edit your skills when you have been improved</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <div class="modal fade" id="aboutThree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tennis Buddy</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <img src="img/im3desc.png" style="width: 100%;">
+                  <p>Tools used: ruby on rails, elasticsearch and Typeahead, cloudinary, googlemaps api, postgreSQL, JavaScript </p>
+                  <p>Description: Foodtruckr is an app for both restraunts and customers, who will prefer to sell/buy their food from different locations in a food trucks </p>
+                  <p>Features:</p>
+                  <ul> 
+                    <li>Registration and creating profile for both chefs and users</li>
+                    <li>Chefs can create events, which are sorted by popularuty, top 3 always seen on index page</li>
+                    <li>Chefs can create their own menu</li>
+                    <li>Chefs can choose different trucks to rent depending on their needs</li>
+                    <li>Customers can pre-order the food</li>
+                    <li>Customers can search along all possible events to choose favorite</li>
+                    <li>FAQ page</li>
+                    <li>All CRUD functionality in action</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         </div>
 
 
 
@@ -405,7 +472,7 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>

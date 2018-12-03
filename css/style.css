@@ -30,12 +30,17 @@ body {
     }
 }
 
+.container {
+    margin-right: 20%;
+}
+
+
 h1, h2, h4  {
     font-family: 'Caudex', serif;
 }
 
 h3 {
-    font-family: 'Trirong', serif;
+    font-family: 'Trirong', serif;  
 }
 
 p {
