@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -301,11 +302,17 @@
     </div>
     <div class="col-sm-6">
       <div class="card m-5">
-          <img class="card-img-top" src="img/proj4.png" alt="Card image cap">
+          <img class="card-img-top" src="img/proj4img1.JPG" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Business Plan Creator</h5>
             <p class="card-text">App helps you to create an academic business plan. In development.</p>
-            <p class="card-text"><small class="text-muted">Deployment in proccess...</small></p>
+            <p class="card-text">
+              <small class="text-muted">
+                  <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#aboutFour">About</button>
+                  <a href="https://github.com/Rstinkho/project4" target="_blank"><button type="button" class="btn btn-outline-warning">Github</button></a>
+                  <a href="https://businessplanr.herokuapp.com/index" target="_blank"><button type="button" class="btn btn-outline-dark">Source</button></a>  
+              </small>
+            </p>
           </div>
         </div>
     </div>
@@ -398,20 +405,37 @@
           </div>
          </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+         <div class="modal fade" id="aboutFour" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Tennis Buddy</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proj4desc.png" style="width: 100%;">
+                    <p>Tools used: react.js, react-route, react-route-dom, firebase, bootstrap, node.js, html/css/javascript</p>
+                    <p>Description: Business plan creator is an app for both business and student users who wish to implement their ideas in a business plan. App is still in development, can track the features here </p>
+                    <p>Features:</p>
+                      <strong> (+) </strong> done
+                      <strong> (+/-) </strong> in development
+                      <strong> (-) </strong> planned
+                    <ul> 
+                      <li>(+) Can display all business plans no matter the size </li>
+                      <li>(+) Anyone can upload their business plans through 6 steps</li>
+                      <li>(+/-) Profile system</li>
+                      <li>(+/-) Message system</li>
+                      <li>(+/-) Rating system</li>
+                      <li>(-) Helper on every stage of BP development</li>
+                      <li>(-) Additional instruments (gantt chart, finhelper)</li>
+                      <li>(-) PDF download</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+           </div>
 
 
 
@@ -423,6 +447,7 @@
     </div>
     <div class="card card-body p-5">
       <h3>Get in touch:</h3>
+      <form action="https://formspree.io/rstinkho@gmail.com" method="POST">
       <div class="form-group">
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
@@ -430,7 +455,7 @@
               <i class="fas fa-user"></i>
             </span>
           </div>
-          <input type="text" class="form-control bg-dark text-white" placeholder="name">
+          <input type="text" class="form-control bg-dark text-white" name="name" placeholder="name">
         </div>
       </div>
       <div class="form-group">
@@ -440,7 +465,7 @@
                 <i class="fas fa-envelope"></i>
               </span>
             </div>
-            <input type="text" class="form-control bg-dark text-white" placeholder="e-mail">
+            <input type="text" class="form-control bg-dark text-white" name="_replyto" placeholder="e-mail">
           </div>
       </div>
         <div class="form-group">
@@ -450,10 +475,11 @@
                   <i class="fas fa-pencil-alt"></i>
                 </span>
               </div>
-                <textarea class="form-control bg-dark text-white" placeholder="message"></textarea>
+                <textarea class="form-control bg-dark text-white" name="message" placeholder="message"></textarea>
             </div>
         </div>
-        <input type="submit" value="submit" class="btn-danger btn-block btn-lg">
+        <input type="submit" value="Send" class="btn-danger btn-block btn-lg">
+        </form>
     </div>
 </div>
 
@@ -461,13 +487,7 @@
   <!-- Footer-->
 
   <footer id="main-footer" class="p-5 bg-dark text-white">
-    <div class="row">
-      <div class="col-md-6">
-        <a href="" class="btn btn-outline-light">
-          <i class="fas fa-cloud"></i> Download resume
-        </a>
-      </div>
-    </div>
+
   </footer>
   </div>
 
@@ -485,6 +505,30 @@
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
+ 
+  $('#mail-form').submit(function(e) {
+    name = document.getElementById('inputName'),
+    email = document.getElementById('inputEmail'),
+    message = document.getElementById('inputMessage')
+
+      if (name.value === null || email.value === null || message.value === null) {
+        alert( 'Please check your entries' )
+        return false
+
+      } else {
+        $.ajax({
+        method: 'POST',
+        url: 'https://formspree.io/rstinkho@gmail.com.com',
+        data: $('#mail-form').serialize(),
+        datatype: 'json'
+        });
+
+        e.preventDefault()
+        $(this).get(0).reset()
+       alert( 'Message sent' )
+      }
+    })
+   
     $('.port-item').click(function () {
       $('.collapse').collapse('hide');
     });
